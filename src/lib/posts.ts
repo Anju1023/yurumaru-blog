@@ -1,7 +1,7 @@
 // まずはDBやMDXを使わず「配列」で練習
 // あとでMDXファイルやsupabaseに「差し替え」できる
 
-interface Post {
+export interface Post {
 	slug: string; // URLの一部 /posts/[slug]
 	title: string; // 記事タイトル
 	date: string; // 公開日(YYYY-MM-DD)
