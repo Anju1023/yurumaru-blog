@@ -6,7 +6,7 @@ export default function Homepage() {
 	return (
 		<div className="space-y-8">
 			<section>
-				<h1 className="text-2xl font-bold">ようこそ🫶</h1>
+				<h1 className="text-pink-700 text-2xl font-bold">ようこそ🫶</h1>
 				<p className="text-neutral-600 mt-1">
 					学習ログと暮しのレビューをゆるっと書いていくサイト！
 				</p>

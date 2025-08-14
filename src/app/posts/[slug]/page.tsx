@@ -20,11 +20,16 @@ export default function PostPage({ params }: Props) {
 	if (!post) return notFound();
 
 	return (
+<<<<<<< HEAD
 		<article className="prose prose-pink max-w-none">
 			<p className="text-sm text-neutral-500">
+=======
+		<article>
+			<p>
+>>>>>>> parent of 2d67729 (PostPageコンポーネントのスタイルを改善し、記事の日付とタグの表示を調整しました。また、タイトルのマージンを変更し、全体のデザインを向上させました。)
 				{post.date}・{post.tags.join(', ')}
 			</p>
-			<h1 className="!mt-1">{post.title}</h1>
+			<h1>{post.title}</h1>
 			{/* 今はcontentをそのまま表示(あとでMDXに置換予定) */}
 			<p>{post.content}</p>
 		</article>
