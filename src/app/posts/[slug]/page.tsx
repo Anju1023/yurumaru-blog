@@ -20,11 +20,11 @@ export default function PostPage({ params }: Props) {
 	if (!post) return notFound();
 
 	return (
-		<article>
-			<p>
+		<article className="prose max-w-none">
+			<p className="text-sm text-neutral-500">
 				{post.date}・{post.tags.join(', ')}
 			</p>
-			<h1>{post.title}</h1>
+			<h1 className="!mt-1">{post.title}</h1>
 			{/* 今はcontentをそのまま表示(あとでMDXに置換予定) */}
 			<p>{post.content}</p>
 		</article>
